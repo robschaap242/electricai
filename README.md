@@ -1,5 +1,13 @@
 ## Travel Track API
 
+#### Modules used
+
+Kept to a very simple list.  Connect and Router are used for the http serving without the rest of Express.  Sqllite is used for some basic DB storage of the tracking and customer data
+
+- connect
+- router
+- sqlite3
+
 #### Basic functions
 
 Requirements

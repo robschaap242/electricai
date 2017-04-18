@@ -1,10 +1,9 @@
-var connect = require('connect');
-var http = require('http');
-var app = connect();
+var finalhandler = require('finalhandler')
+var http         = require('http')
+var routes = require('./routes')
 
-// routes
-var testRoutes = require('./routes')(app);
-app.use('/connect/', testRoutes);
+var server = http.createServer(function(req, res) {
+    routes(req, res, finalhandler(req, res))
+})
 
-
-http.createServer(app).listen(5000);
+server.listen(5000)
