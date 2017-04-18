@@ -3,7 +3,7 @@ var http = require('http');
 var app = connect();
 
 // routes
-var testRoutes = require('./routes');
+var testRoutes = require('./routes')(app);
 app.use('/connect/', testRoutes);
 
 
