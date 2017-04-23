@@ -67,9 +67,9 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
 # left
 
 - insert new tracking information
-- readme
-- specific CSR and customer ID's
-
+- readme, routes and other stuff
+- sql script file
+- setup postman
 
 #####Customer
 
