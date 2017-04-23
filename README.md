@@ -57,19 +57,13 @@ Normalized data objects
 
 Kept to a very simple list.  Connect and Router are used for the http serving without the rest of Express.  Sqllite3 is used for some basic DB storage of the tracking and customer data
 
-- connect
+- http
 - router
+- bodyParser
 - sqlite3 (probs a mistake)
 - bluebird
 
 ### Routes
-
-# left
-
-- insert new tracking information
-- readme, routes and other stuff
-- sql script file
-- setup postman
 
 #####Customer
 
@@ -78,8 +72,12 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
  - Get all the customers listed in the database
  
  
- 
-######/tracking/[id]
+## Left to do
 
- - tracking per a specific customer id
-
+- SQLLite autoincrement table fix, date fixes
+- better - any - error handling for posts
+- dates dates dates
+- readme, routes and other stuff
+- sql script file
+- setup postman
+- why filehandler again?

@@ -37,3 +37,12 @@ module.exports.get_tracking_dash = function get_tracking_dash(){
             })
     })
 }
+
+// post tracking
+module.exports.post_tracking = function post_tracking(customer_id, step_id, date, csr){
+
+    db.run("INSERT INTO tracking (id, csr, customer_id, step, mod_date) VALUES (?,?,?,?,?)", 9, csr, customer_id, step_id, '2017-04-20',
+        function(err, data) {
+            return ("done");
+        })
+}
