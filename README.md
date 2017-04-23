@@ -19,6 +19,8 @@ Since the application revolves around the customer and CSR actions, here's the s
 
 #####Steps in booking:
 
+- Submitted a requests
+- Picking a destination
 - Destination chosen
 - flight or train, or not needed
 - rental cars booked
@@ -31,11 +33,12 @@ Since the application revolves around the customer and CSR actions, here's the s
 
 Hierarchical order
 
-1. Picking a destination
-2. How you getting trhere
-3. Where you staying
-4. How you getting around
-5. What do you do when you're there
+1. Started order
+2. Picking a destination
+3. How is customer getting there
+4. Where are they staying
+5. How will they getting around
+6. What do you do when you're there
 
 
 ## Application
@@ -56,10 +59,16 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
 
 - connect
 - router
-- sqlite3
+- sqlite3 (probs a mistake)
 - bluebird
 
 ### Routes
+
+# left
+
+- insert new tracking information
+- readme
+- specific CSR and customer ID's
 
 
 #####Customer
@@ -67,8 +76,6 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
 ######/customer/list
 
  - Get all the customers listed in the database
- 
- 
  
  
  
