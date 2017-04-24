@@ -32,7 +32,7 @@ router.get('/csr/list/:id', function (req, res) {
 
 router.get('/dash/list', function (req, res) {
     res.setHeader('Content-Type', 'application/vnd.api+json; charset=utf-8')
-    db.get_tracking_dash.then(function(data){
+    db.get_tracking_dash().then(function(data){
         res.end(JSON.stringify(data))
     })
 })

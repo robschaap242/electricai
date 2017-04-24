@@ -67,17 +67,27 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
 
 #####Customer
 
-######/customer/list
+<code>/customer/list</code>
 
- - Get all the customers listed in the database
+Get all the customers listed in the database
  
+ <code>/customer/list/:id</code>
  
-## Left to do
+Get specific customer and associated tracking information
+ 
+<code>/csr/list/:id </code>
 
-- SQLLite autoincrement table fix, date fixes
-- better - any - error handling for posts
-- dates dates dates
-- readme, routes and other stuff
-- sql script file
-- setup postman
-- why filehandler again?
+Get all the tracking data for a specific customer service rep
+ 
+<code>/dash/list/</code>
+ 
+List of people and current step, sorted by priority
+
+<code>/dash/track:[customer_id, step_id, date, csr]</code>
+
+Post a step for tracking given a customer
+ 
+## todo list
+
+- error handling for posts
+- testing mocha
