@@ -87,7 +87,5 @@ List of people and current step, sorted by priority
 
 Post a step for tracking given a customer
  
-## todo list
-
-- error handling for posts
+## todo...
 - testing mocha

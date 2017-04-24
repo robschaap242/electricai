@@ -1,6 +1,7 @@
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('travel.db');
 var Promise = require('bluebird');
+var moment = require ('moment');
 
 module.exports.get_customers = function get_customers(id){
     return new Promise(function(resolve, reject){
@@ -41,8 +42,11 @@ module.exports.get_tracking_dash = function get_tracking_dash(){
 // post tracking
 module.exports.post_tracking = function post_tracking(customer_id, step_id, date, csr){
 
-    db.run("INSERT INTO tracking (id, csr, customer_id, step, mod_date) VALUES (?,?,?,?,?)", 9, csr, customer_id, step_id, '2017-04-20',
+    var mod_date = moment().format('YYYY-MM-DD');
+    db.run("INSERT INTO tracking (csr, customer_id, step, mod_date, date) VALUES (?,?,?,?,?)", csr, customer_id, step_id, mod_date, date,
         function(err, data) {
-            return ("done");
+            if (err){
+                console.log(err)
+            }
         })
 }
