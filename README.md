@@ -17,7 +17,7 @@
 
 Since the application revolves around the customer and CSR actions, here's the steps and prioritizations chosen:
 
-#####Steps in booking:
+##### Steps in booking:
 
 - Submitted a requests
 - Picking a destination
@@ -29,7 +29,7 @@ Since the application revolves around the customer and CSR actions, here's the s
 - itinerary
 - Insurance
 
-#####Prioritization of steps
+##### Prioritization of steps
 
 Hierarchical order
 
@@ -65,7 +65,7 @@ Kept to a very simple list.  Connect and Router are used for the http serving wi
 
 ### Routes
 
-#####Customer
+##### Customer
 
 <code>/customer/list</code>
 
